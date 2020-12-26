@@ -3,6 +3,8 @@
 ### List of Files
 
 `slide_segment.py` Supporting functions that separates the slices in a biospy image
+`Otsu_WSI.py` Supporting functions that segments dermis, epidermis and background using threshold
+
 
 ### Prepare data
 
@@ -32,4 +34,14 @@ python slide_segment.py --input_folder 'original/3/' --output_path 'melanoma_dia
 ```
 
 This will create separate images for each slice and a csv file with the bounding box of each slice (under x2.5 zoom). 
+
+###  for each slide, segment dermis, epidermis, background
+
+The following command runs a single image:
+
+```Python
+python Otsu_WSI.py --in_path 'original/1/MP_0169/0.tif' --out_path 'original/1/MP_0169/' --category_directory_or_single single --binary_or_multi binary 
+```
+
+Refer to 'Otsu_WSI.py' for more argument options. 
 
