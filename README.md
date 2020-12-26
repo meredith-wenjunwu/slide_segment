@@ -35,7 +35,7 @@ python slide_segment.py --input_folder 'original/3/' --output_path 'melanoma_dia
 
 This will create separate images for each slice and a csv file with the bounding box of each slice (under x2.5 zoom). 
 
-###  for each slide, segment dermis, epidermis, background
+###  Segment dermis, epidermis, background
 
 The following command runs a single image:
 
